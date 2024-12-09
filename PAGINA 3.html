@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina3">
+
+    <main>
+        <header>
+            <h1>EXAMEN FINAL</h1>
+        </header>
+
+        <nav>
+            <!-- Botones para redirigir a otras páginas -->
+            <a href="pagina1.html" class="nav-button">PRINCIPAL</a>
+            <a href="pagina2.html" class="nav-button">API</a>
+            <a href="pagina4.html" class="nav-button">OPERACIONES</a>
+        </nav>
+        <div class="container">
+            <h1>Formulario de Datos de Empleado</h1>
+            <form id="fForm">
+                <!-- Campos del formulario -->
+                <label for="fName">Nombre y Apellido:</label>
+                <input type="text" id="fName" name="fName" required>
+
+                <label for="calificacion">Calficacion:</label>
+                <input type="number" id="calificacion" name="calificacion" required>
+
+                <label for="observacion">Observaciones:</label>
+                <textarea id="observacion" name="observacion" rows="4" required></textarea>
+
+                <label for="senderName">Nombre del Remitente:</label>
+                <input type="text" id="senderName" name="senderName" required>
+
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="clearForm">Limpiar</button>
+                </div>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+        <footer>
+            <p>&copy; DERECHOS RESERVADOS POR LUIS NAHUEL ORTIZ - FERNANDO DE LA MORA - 2024</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
