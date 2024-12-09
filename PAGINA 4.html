@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina4">
+
+    <main>
+        <header>
+            <h1>EXAMEN FINAL</h1>
+        </header>
+
+        <nav>
+            <!-- Botones para redirigir a otras páginas -->
+            <a href="pagina1.html" class="nav-button">PRINCIPAL</a>
+            <a href="pagina2.html" class="nav-button">API</a>
+            <a href="pagina3.html" class="nav-button">FORMULARIO</a>
+        </nav>
+        <div class="container">
+            <h1>Operaciones de Cálculo</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="animated-header">Operación</th>
+                        <th class="animated-header">Descripción</th>
+                        <th class="animated-header">Botones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fila para el cálculo de Total Producto -->
+                    <tr>
+                        <td>Total Producto</td>
+                        <td>El cálculo se realiza automáticamente usando valores predefinidos.</td>
+                        <td>
+                            <button onclick="calculateProduct()">Calcular</button>
+                            <p id="resultadoProducto"></p>
+                        </td>
+                    </tr>
+                    <!-- Fila para el cálculo de Porcentaje -->
+                    <tr>
+                        <td>Calcular Porcentaje</td>
+                        <td>El cálculo se realiza automáticamente usando valores predefinidos.</td>
+                        <td>
+                            <button onclick="calculatePercentage()">Calcular</button>
+                            <p id="resultadoPorcentaje"></p>
+                        </td>
+                    </tr>
+                    <!-- Fila para el cálculo de Descuento -->
+                    <tr>
+                        <td>Calcular Descuento</td>
+                        <td>El cálculo se realiza automáticamente usando valores predefinidos.</td>
+                        <td>
+                            <button onclick="calculateDiscount()">Calcular</button>
+                            <p id="resultadoDescuento"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>&copy; DERECHOS RESERVADOS POR LUIS NAHUEL ORTIZ - FERNANDO DE LA MORA - 2024</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
